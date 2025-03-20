@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ </head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span class="name">Anuradha</span></h1>
+      <p class="typing-effect"></p><br>
+      <button class="btn">Download Resume</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+
+    <div class="about-text">
+      <p>
+        Hi, I'm <span class="highlight">Anuradha</span>, a passionate BTech CSE student with a keen interest in web development and data structures. I am currently learning <span class="highlight">React.js</span> and improving my problem-solving skills through <span class="highlight">DSA</span>.
+      </p>
+      <p>
+        I enjoy building responsive and user-friendly websites and applications. My goal is to become a full-stack developer and contribute to innovative projects that make a difference.
+      </p>
+    </div>
+  </div>
+</section>
+ 
+<!-- Skills Section -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <!-- Frontend Development -->
+    <div class="skill-card">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <h3>Frontend Development</h3>
+        </div>
+        <div class="skill-card-back">
+          <ul>
+            <li><i class="fab fa-html5"></i><span>HTML</span></li>
+            <li><i class="fab fa-css3-alt"></i><span>CSS</span></li>
+            <li><i class="fab fa-js-square"></i><span>JavaScript</span></li>
+            <li><i class="fab fa-react"></i><span>React</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programming -->
+    <div class="skill-card">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <h3>Programming</h3>
+        </div>
+        <div class="skill-card-back">
+          <ul>
+            <li><i class="fas fa-code"></i><span>C++</span></li>
+            <li><i class="fas fa-project-diagram"></i><span>DSA</span></li>
+            <li><i class="fas fa-cubes"></i><span>OOP</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div class="skill-card">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <h3>Tools & Technologies</h3>
+        </div>
+        <div class="skill-card-back">
+          <ul>
+            <li><i class="fab fa-git-alt"></i><span>Git</span></li>
+            <li><i class="fas fa-code"></i><span>VS Code</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS Fundamentals -->
+    <div class="skill-card">
+      <div class="skill-card-inner">
+        <div class="skill-card-front">
+          <h3>CS Fundamentals</h3>
+        </div>
+        <div class="skill-card-back">
+          <ul>
+            <li><i class="fas fa-database"></i><span>DBMS</span></li>
+            <li><i class="fas fa-desktop"></i><span>OS</span></li>
+            <li><i class="fas fa-network-wired"></i><span>Networks</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-content">
+
+      <div class="project-card">
+        <div class="project-card-inner">
+          <div class="project-card-front">
+            <h3>Project 1</h3>
+            <p>A simple portfolio website using HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="project-card-back">
+            <p>Details about Project 1.</p>
+            <a href="#" target="_blank"  class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-inner">
+          <div class="project-card-front">
+            <h3>Project 2</h3>
+            <p>A to-do list app using React.js.</p>
+          </div>
+          <div class="project-card-back project-2">
+            <p>Details about Project 2.</p>
+            <a href="https://todo-app-humu.onrender.com/" target="_blank" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-inner">
+          <div class="project-card-front">
+            <h3>Project 3</h3>
+            <p>Simon Game using HTML, CSS and JavaScript.</p>
+          </div>
+          <div class="project-card-back">
+            <p>Details about Project 3.</p>
+            <a href="https://anusaini-12.github.io/Simon-Game/" target="_blank"  class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-inner">
+          <div class="project-card-front">
+            <h3>Project 4</h3>
+            <p>A stopwatch using HTML, CSS and JavaScript.</p>
+          </div>
+          <div class="project-card-back">
+            <p>Details about Project 4.</p>
+            <a href="https://anusaini-12.github.io/STOPWATCH/" target="_blank"  class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-inner">
+          <div class="project-card-front">
+            <h3>FilmFinder</h3>
+            <p>A movie app using HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="project-card-back">
+            <p>Details about Project 5.</p>
+            <a href="https://anusaini-12.github.io/FilmFinder/" target="_blank"  class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="submit">Send Message</button>
+</form>
+<p id="response-message" style="display: none; font-size: 1.5rem;"></p></section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Anuradha. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/anuradha-kushwaha-b867b32b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Anusaini-12/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/itzanu0_0" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>  
+<script src="script.js"></script>
+<script src="home.js"></script>
+</body>
+</html>                          
