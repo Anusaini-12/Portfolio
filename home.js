@@ -1,4 +1,5 @@
-const textArray = [
+document.addEventListener("DOMContentLoaded", () => {
+  const textArray = [
     "Frontend Developer 🚀",
     "Building interactive UIs ✨",
     "Learning DSA with C++ 🔥",
@@ -6,14 +7,13 @@ const textArray = [
     "Creating user-friendly designs 🎨",
     "Problem-solving with code 🧩"
   ];
-  
-  let textIndex = 0;
-  let charIndex = 0;
-  const typingSpeed = 100; // Typing speed in ms
-  const erasingSpeed = 50; // Erasing speed in ms
-  const delayBetweenTexts = 2000; // Pause before deleting
+
+  let textIndex = 0, charIndex = 0;
+  const typingSpeed = 100, erasingSpeed = 50, delayBetweenTexts = 2000;
   const typingElement = document.querySelector(".typing-effect");
-  
+
+  if (!typingElement) return;
+
   function typeText() {
     if (charIndex < textArray[textIndex].length) {
       typingElement.textContent += textArray[textIndex].charAt(charIndex);
@@ -23,22 +23,23 @@ const textArray = [
       setTimeout(eraseText, delayBetweenTexts);
     }
   }
-  
+
   function eraseText() {
     if (charIndex > 0) {
       typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
       charIndex--;
       setTimeout(eraseText, erasingSpeed);
     } else {
-      textIndex = (textIndex + 1) % textArray.length; // Move to next text
+      textIndex = (textIndex + 1) % textArray.length;
       setTimeout(typeText, typingSpeed);
     }
   }
-  
-  // Start the typing effect when page loads
-  document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(typeText, 500);
-  });
 
+  // Adjust typing for mobile
+  if (window.innerWidth <= 480) {
+    typingElement.style.whiteSpace = "normal";
+    typingElement.style.borderRight = "none";
+  }
 
-  
+  setTimeout(typeText, 500);
+});

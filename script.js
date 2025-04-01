@@ -1,3 +1,24 @@
+// Simple Box Menu Toggle
+const menuBtn = document.querySelector('.menu-toggle');
+const menuBox = document.querySelector('.menu-box');
+
+menuBtn.addEventListener('click', (e) => {
+  e.stopPropagation(); // Prevent immediate close
+  menuBox.classList.toggle('open');
+});
+
+// Close when clicking anywhere else
+document.addEventListener('click', () => {
+  menuBox.classList.remove('open');
+});
+
+// Close when clicking menu links
+document.querySelectorAll('.menu-box a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuBox.classList.remove('open');
+  });
+});
+
 // Smooth scrolling for navigation
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
