@@ -338,10 +338,8 @@ body.dark-mode .skill-card-back .fa-network-wired { color: #66bb6a; }
   height: 200px;
   perspective: 1000px;
   margin: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
-
 .project-card-inner {
   position: relative;
   width: 100%;
@@ -349,11 +347,9 @@ body.dark-mode .skill-card-back .fa-network-wired { color: #66bb6a; }
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-
 .project-card:hover .project-card-inner {
   transform: rotateY(180deg);
 }
-
 .project-card-front,
 .project-card-back {
   position: absolute;
@@ -366,10 +362,14 @@ body.dark-mode .skill-card-back .fa-network-wired { color: #66bb6a; }
   align-items: center;
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .project-card-front {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+.project-card-front h3{
+  color: pink
 }
 
 .project-card-front h3 {
@@ -628,7 +628,6 @@ body.dark-mode footer {
   top: 70px;
   right: 20px;
   width: 180px;
-  /* background: rgba(30, 30, 40, 0.3); */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
